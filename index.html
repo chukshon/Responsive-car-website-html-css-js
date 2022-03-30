@@ -10,26 +10,110 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- REMIX ICON -->
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- SWIPER CSS-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    ;
   </head>
   <body>
     <!-- HEADER -->
 
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <!-- Nav -->
+      <nav class="nav container">
+        <!-- Logo -->
+        <a href="" class="nav__logo">
+          <i class="ri-steering-2-line"></i>
+          Elecar
+        </a>
+
+        <!-- Nav-menu -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
 
     <!-- MAIN -->
     <main class="main">
       <!-- HOME -->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">Choose The Best Car</h1>
+            <h2 class="home__subtitle">Porsche Mission E</h2>
+            <h3 class="home__elec">
+              <i class="ri-flashlight-fill"></i>
+              Electic Car
+            </h3>
+          </div>
+
+          <img src="assets/img//home.png" alt="" class="home__img" />
+
+          <div class="home__car">
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-temp-cold-line"></i>
+              </div>
+              <h3 class="home__car-number">24°</h3>
+              <h3 class="home__car-name">TEMPERATURE</h3>
+            </div>
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-time-line"></i>
+              </div>
+              <h3 class="home__car-number">873</h3>
+              <h3 class="home__car-name">MILEAGE</h3>
+            </div>
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-flashlight-fill"></i>
+              </div>
+              <h3 class="home__car-number">94%</h3>
+              <h3 class="home__car-name">BATTERY</h3>
+            </div>
+          </div>
+
+          <a href="#about" class="home__button">START</a>
+        </div>
+      </section>
 
       <!-- ABOUT -->
       <section class="about section" id="about"></section>
+
+      <!-- POPULAR -->
+      <section class="popular section" id="popular"></section>
     </main>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

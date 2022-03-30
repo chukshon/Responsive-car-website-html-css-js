@@ -109,3 +109,246 @@ img {
 .main {
   overflow: hidden;
 }
+
+.shape {
+  background-color: hsla(219, 33%, 32%, 0.5);
+  filter: blur(112px);
+  border-radius: 50%;
+}
+
+.shape__big {
+  width: 400px;
+  height: 400px;
+}
+
+.shape__small {
+  width: 300px;
+  height: 300px;
+}
+
+/*=============== HEADER AND NAV ===============*/
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: 0.3s;
+}
+
+/* Scroll-header */
+
+.scroll-header {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--body-color);
+  box-shadow: 0 2px 4px hsla(0, 0%, 1% 1);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  display: inline-flex;
+}
+
+.nav__logo {
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.nav__logo i {
+  font-size: 1.25rem;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(96px);
+    transition: 0.3s;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+    padding-top: 9rem;
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+  }
+
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  .nav__close {
+    font-size: 2rem;
+    color: var(--white-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  /* Show menu */
+
+  .show-menu {
+    right: 0;
+  }
+}
+
+/*=============== HOME ===============*/
+
+.home {
+  position: relative;
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__subtitle {
+  font-style: var(--h3-font-size);
+  margin-bottom: 0.25rem;
+}
+.home__elec {
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.home__elec i {
+  color: var(--first-color);
+}
+
+.home__img {
+  width: 250px;
+  justify-self: center;
+}
+
+.home__car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  margin-bottom: 2rem;
+}
+.home__car-data {
+  text-align: center;
+}
+
+.home__car-number {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  margin: 0.75rem 0;
+}
+.home__car-name {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+.home__car-icon {
+  background-color: var(--container-color);
+  border-radius: 50%;
+  padding: 0.376rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+.home__button {
+  position: relative;
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  justify-self: center;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.home__button::before {
+  content: '';
+  border: 2px solid hsl(158, 98%, 43%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  transition: 0.3s;
+  animation: button 3s infinite;
+}
+
+.home .shape__big,
+.home .shape__small {
+  position: absolute;
+}
+
+.home .shape__big {
+  left: -9rem;
+  top: -4rem;
+}
+.home .shape__small {
+  right: -10rem;
+  bottom: 3rem;
+}
+/* Button animate */
+@keyframes button {
+  0% {
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  }
+  50% {
+    box-shadow: 0 0 24px hsl(158, 98%, 43%);
+  }
+}
