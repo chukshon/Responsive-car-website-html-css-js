@@ -1,9 +1,7 @@
 # Responsive-car-website-html-css-js
 A  fully responsive car rental website design, responsive for all devices, built using HTML, CSS, and JavaScript.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/chukshon/Responsive-car-website-html-css-js)
-![GitHub stars](https://img.shields.io/github/stars/chukshon/Responsive-car-website-html-css-js?style=social)
-![GitHub forks](https://img.shields.io/github/forks/chukshon/Responsive-car-website-html-css-js?style=social)
+
 
 ### Responsive car website
 
