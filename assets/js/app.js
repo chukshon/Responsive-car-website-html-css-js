@@ -29,8 +29,8 @@ window.addEventListener('scroll', () => {
 
 let swiperPopular = new Swiper('.popular__container', {
   loop: true,
-  spaceBetween: 25,
-  slidesPerView: 1.4,
+  spaceBetween: 24,
+  slidesPerView: 2,
   grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
@@ -41,6 +41,7 @@ let swiperPopular = new Swiper('.popular__container', {
       slidesPerView: 3,
     },
     1024: {
+      slidesPerView: 3,
       spaceBetween: 48,
     },
   },
